@@ -1,1 +1,1 @@
-# daniel.krutz.github.io
+# danielkrutz.github.io
