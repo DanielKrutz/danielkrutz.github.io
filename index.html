@@ -83,6 +83,16 @@ function loadPageData(strPageName){
 
   break;
 
+     case "aware-lab":
+    $(document).ready(function(){
+        $('#content').load("pages/aware-lab.html"); 
+              $(window).on('load', function(){
+        $('#labNavLink').addClass('dkActive');
+      })
+      });
+
+  break;
+
 
    case "publications":
     $(document).ready(function(){
@@ -173,6 +183,7 @@ default:
             <li><a href="index.html?page=teaching" id="teachingNavLink" class="animate">Teaching</a></li>
             <li><a href="index.html?page=studentadvising" id="studentadvisingNavLink" class="animate">Advising</a></li>
             <li><a href="index.html?page=studentadvice" id="studentAdvicegNavLink" class="animate">Student Advice</a></li>
+            <li><a href="index.html?page=aware-lab" id="labNavLink" class="animate">AWARE Lab</a></li>
 
 
 <!--
