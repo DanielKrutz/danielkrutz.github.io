@@ -3,6 +3,10 @@
         padding-bottom: 60px;
       }
 
+      .column {
+        float: left;
+      }
+
       /* Custom container */
       .container {
         margin: 0 auto;

@@ -13,9 +13,39 @@
 	.post-thumb img {
 	    display: block
 	}
+	.post-block {
+		float: left;
+		padding-left: 20px; 
+		width: 50%
+	}
 	.post-content {
 	    margin-left: 180px
 	}
+	.column {
+		float: left;
+	}
+
+	@media (min-width: 320px) and (max-width: 480px) {
+  
+		.post-block {
+			float: unset;
+			padding-left: 0px; 
+			width: 100%
+		}
+		.post-thumb {
+			float: unset
+		}
+		.post-content {
+			margin-left: 0px
+		}
+		.post-container {
+			margin: 0px;  
+			border: 0px solid #333;
+			overflow: auto
+		}
+
+	}
+
 
 </style>
 
@@ -31,23 +61,35 @@
 
 
 		<div class="post-container">                
-	    <div class="post-thumb"><img src="images/krutz_sm_2.png" alt="Daniel Krutz" align="middle" width="100%" height="100%" /> </div>
-	    <div class="post-content">
-	 
-	        <h4>Contact Information</h4>
-	        	Daniel E. Krutz, PhD <br />
-				dxkvse AT rit.edu <br />
-				GOL-70-1537<br />
-				<a href="http://www.se.rit.edu/" target="_blank">Department of Software Engineering</a><br>
-				<a href="http://www.rit.edu/" target="_blank">Rochester Institute of Technology </a>
-				<!--
-				<br>
-				134 Lomb Memorial Drive<br>
-				Rochester, NY 14623-5608
-				-->
-	   </div>
-	</div>
-	</div>
+			<div class="post-thumb"><img src="images/krutz_sm_2.png" alt="Daniel Krutz" align="middle" width="100%" height="100%" /> </div>
+				<div class="post-content ">
+			
+					<div class="post-block" >
+							<h4>Contact Information</h4>
+							Daniel E. Krutz, PhD <br />
+							dxkvse AT rit.edu <br />
+							GOL-70-1537<br />
+							<a href="http://www.se.rit.edu/" target="_blank">Department of Software Engineering</a><br>
+							<a href="http://www.rit.edu/" target="_blank">Rochester Institute of Technology </a>
+							<!--
+							<br>
+							134 Lomb Memorial Drive<br>
+							Rochester, NY 14623-5608
+							-->
+					</div>
+					
+					<div class="post-block">
+						<h4>Announcements</h4>
+						<div class="card-body">
+							<h5 class="card-title">Notice Section</h5>
+							<h6 class="card-subtitle mb-2 text-muted">Check later.</h6>
+							<p class="card-text">Any potential announcements/news will be posted here. Any potential announcements/news will be posted here. Any potential announcements/news will be posted here.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 
 
 
