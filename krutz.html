@@ -5,505 +5,512 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel E. Krutz</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="/images/krutz_sm.jpg" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css"
     />
   </head>
   <body>
-    <!-- Section 1 -->
-    <section
-      class="w-full px-6 pb-12 antialiased from-purple-200 bg-gradient-to-b"
-    >
-      <div class="mx-auto max-w-7xl border-b-2 gray-200">
-        <nav
-          class="relative z-50 h-24 select-none"
-          x-data="{ showMenu: false }"
-        >
+    <div class="w-full overflow-hidden">
+      <!-- Section 1 -->
+      <section
+        class="w-full px-6 pb-12 antialiased from-purple-200 bg-gradient-to-b"
+      >
+        <div class="mx-auto max-w-7xl border-b-2 gray-200">
+          <nav
+            class="relative z-50 h-24 select-none"
+            x-data="{ showMenu: false }"
+          >
+            <div
+              class="
+                container
+                relative
+                flex flex-wrap
+                items-center
+                justify-between
+                h-24
+                mx-auto
+                overflow-hidden
+                font-medium
+                border-b border-gray-200
+                md:overflow-visible
+                lg:justify-center
+                sm:px-4
+                md:px-2
+              "
+            >
+              <div class="flex items-center justify-start w-1/4 h-full pr-4">
+                <a href="#_" class="inline-block py-4 md:py-0">
+                  <span
+                    class="p-1 text-xl font-black leading-none text-gray-900"
+                    ><span
+                      >Daniel E<span class="text-indigo-600">.</span>Krutz
+                    </span>
+                  </span>
+                </a>
+              </div>
+              <div
+                class="
+                  top-0
+                  left-0
+                  items-start
+                  hidden
+                  w-full
+                  h-full
+                  p-4
+                  text-sm
+                  bg-gray-900 bg-opacity-50
+                  md:items-center md:w-3/4 md:absolute
+                  lg:text-base
+                  md:bg-transparent md:p-0 md:relative md:flex
+                "
+                :class="{'flex fixed': showMenu, 'hidden': !showMenu }"
+              >
+                <div
+                  class="
+                    flex-col
+                    w-full
+                    h-auto
+                    overflow-hidden
+                    bg-white
+                    rounded-lg
+                    md:bg-transparent
+                    md:overflow-visible
+                    md:rounded-none
+                    md:relative
+                    md:flex
+                    md:flex-row
+                  "
+                >
+                  <a
+                    href="#_"
+                    class="
+                      inline-flex
+                      items-center
+                      block
+                      w-auto
+                      h-16
+                      px-6
+                      text-xl
+                      font-black
+                      leading-none
+                      text-gray-900
+                      md:hidden
+                    "
+                    >Daniel E<span class="text-indigo-600">.</span>Krutz</a
+                  >
+                  <div
+                    class="
+                      flex flex-col
+                      items-start
+                      justify-center
+                      w-full
+                      space-x-6
+                      text-center
+                      lg:space-x-8
+                      md:w-2/3 md:mt-0 md:flex-row md:items-center
+                    "
+                  >
+                    <a
+                      href="#home"
+                      class="
+                        inline-block
+                        w-full
+                        py-2
+                        mx-0
+                        ml-6
+                        font-medium
+                        text-left text-indigo-600
+                        md:ml-0 md:w-auto md:px-0 md:mx-2
+                        lg:mx-3
+                        md:text-center
+                      "
+                      >Home</a
+                    >
+                    <a
+                      href="#labs"
+                      class="
+                        inline-block
+                        w-full
+                        py-2
+                        mx-0
+                        font-medium
+                        text-left text-gray-700
+                        md:w-auto md:px-0 md:mx-2
+                        hover:text-indigo-600
+                        lg:mx-3
+                        md:text-center
+                      "
+                      >Labs</a
+                    >
+                    <a
+                      href="#people"
+                      class="
+                        inline-block
+                        w-full
+                        py-2
+                        mx-0
+                        font-medium
+                        text-left text-gray-700
+                        md:w-auto md:px-0 md:mx-2
+                        hover:text-indigo-600
+                        lg:mx-3
+                        md:text-center
+                      "
+                      >People</a
+                    >
+                    <a
+                      href="#publications"
+                      class="
+                        inline-block
+                        w-full
+                        py-2
+                        mx-0
+                        font-medium
+                        text-left text-gray-700
+                        md:w-auto md:px-0 md:mx-2
+                        hover:text-indigo-600
+                        lg:mx-3
+                        md:text-center
+                      "
+                      >Publications</a
+                    >
+                    <a
+                      href="#profile"
+                      class="
+                        inline-block
+                        w-full
+                        py-2
+                        mx-0
+                        font-medium
+                        text-left text-gray-700
+                        md:w-auto md:px-0 md:mx-2
+                        hover:text-indigo-600
+                        lg:mx-3
+                        md:text-center
+                      "
+                      >Profile</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                @click="showMenu = !showMenu"
+                class="
+                  absolute
+                  right-0
+                  flex flex-col
+                  items-center items-end
+                  justify-center
+                  w-10
+                  h-10
+                  bg-white
+                  rounded-full
+                  cursor-pointer
+                  md:hidden
+                  hover:bg-gray-100
+                "
+              >
+                <svg
+                  class="w-6 h-6 text-gray-700"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  x-cloak=""
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg
+                  class="w-6 h-6 text-gray-700"
+                  x-show="showMenu"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  x-cloak=""
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </nav>
+
+          <!-- Main Hero Content -->
           <div
             class="
               container
-              relative
-              flex flex-wrap
-              items-center
-              justify-between
-              h-24
+              max-w-lg
+              px-4
+              py-32
               mx-auto
-              overflow-hidden
-              font-medium
-              border-b border-gray-200
-              md:overflow-visible
-              lg:justify-center
-              sm:px-4
-              md:px-2
+              text-left
+              md:max-w-none md:text-center
             "
           >
-            <div class="flex items-center justify-start w-1/4 h-full pr-4">
-              <a href="#_" class="inline-block py-4 md:py-0">
-                <span class="p-1 text-xl font-black leading-none text-gray-900"
-                  ><span
-                    >Daniel E<span class="text-indigo-600">.</span>Krutz
-                  </span>
-                </span>
+            <h1
+              class="
+                text-5xl
+                font-extrabold
+                leading-10
+                tracking-tight
+                text-left text-gray-900
+                md:text-center
+                sm:leading-none
+                md:text-6xl
+                lg:text-7xl
+              "
+            >
+              <span class="inline md:block"
+                >Autonomy, Warfare, and Engineering
+              </span>
+              <span
+                class="
+                  relative
+                  mt-2
+                  text-transparent
+                  bg-clip-text bg-gradient-to-br
+                  from-indigo-600
+                  to-indigo-500
+                  md:inline-block
+                "
+                >(AWARE) Lab</span
+              >
+            </h1>
+          </div>
+          <!-- End Main Hero Content -->
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section
+        data-aos="zoom-in-down"
+        class="px-2 py-32 bg-white md:px-0"
+        id="home"
+      >
+        <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
+          <div class="flex flex-wrap items-center sm:-mx-3">
+            <div class="w-full md:w-1/2 md:px-3">
+              <div
+                class="
+                  w-full
+                  pb-6
+                  space-y-6
+                  sm:max-w-md
+                  lg:max-w-lg
+                  md:space-y-4
+                  lg:space-y-8
+                  xl:space-y-9
+                  sm:pr-5
+                  lg:pr-0
+                  md:pb-0
+                "
+              >
+                <h1
+                  class="
+                    text-4xl
+                    font-extrabold
+                    tracking-tight
+                    text-gray-900
+                    sm:text-5xl
+                    md:text-4xl
+                    lg:text-5xl
+                    xl:text-6xl
+                  "
+                >
+                  <span class="block xl:inline">The mission of </span>
+                  <span class="block text-indigo-600 xl:inline"
+                    >The AWARE lab</span
+                  >
+                </h1>
+                <p
+                  class="
+                    mx-auto
+                    text-base text-gray-500
+                    sm:max-w-md
+                    lg:text-xl
+                    md:max-w-3xl
+                  "
+                >
+                  Is to support projects related to: Autonomous systems, Warfare
+                  applications and Software Engineering.
+                </p>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <div
+                data-aos="fade-up"
+                class="
+                  w-full
+                  h-auto
+                  overflow-hidden
+                  rounded-md
+                  shadow-xl
+                  sm:rounded-xl
+                "
+              >
+                <img
+                  src="https://cdn.devdojo.com/images/november2020/hero-image.jpeg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section data-aos="zoom-in-right" class="bg-white pt-7 pb-14">
+        <div class="container px-8 mx-auto sm:px-12 lg:px-20">
+          <h1
+            class="
+              text-sm
+              font-bold
+              tracking-wide
+              text-center text-gray-800
+              uppercase
+              mb-7
+            "
+          >
+            Funding Companies
+          </h1>
+
+          <div class="flex justify-between">
+            <div
+              class="
+                flex
+                items-center
+                justify-center
+                col-span-6
+                sm:col-span-4
+                md:col-span-3
+                xl:col-span-2
+              "
+            >
+              <a href="https://www.wpafb.af.mil/afrl/" target="_blank">
+                <img
+                  src="images/afrl.png"
+                  alt="Air Force Research Lab"
+                  class="block object-contain h-10 md:h-16"
+                />
               </a>
             </div>
             <div
               class="
-                top-0
-                left-0
-                items-start
-                hidden
-                w-full
-                h-full
-                p-4
-                text-sm
-                bg-gray-900 bg-opacity-50
-                md:items-center md:w-3/4 md:absolute
-                lg:text-base
-                md:bg-transparent md:p-0 md:relative md:flex
+                flex
+                items-center
+                justify-center
+                col-span-6
+                sm:col-span-4
+                md:col-span-3
+                xl:col-span-2
               "
-              :class="{'flex fixed': showMenu, 'hidden': !showMenu }"
             >
-              <div
-                class="
-                  flex-col
-                  w-full
-                  h-auto
-                  overflow-hidden
-                  bg-white
-                  rounded-lg
-                  md:bg-transparent
-                  md:overflow-visible
-                  md:rounded-none
-                  md:relative
-                  md:flex
-                  md:flex-row
-                "
-              >
-                <a
-                  href="#_"
-                  class="
-                    inline-flex
-                    items-center
-                    block
-                    w-auto
-                    h-16
-                    px-6
-                    text-xl
-                    font-black
-                    leading-none
-                    text-gray-900
-                    md:hidden
-                  "
-                  >Daniel E<span class="text-indigo-600">.</span>Krutz</a
-                >
-                <div
-                  class="
-                    flex flex-col
-                    items-start
-                    justify-center
-                    w-full
-                    space-x-6
-                    text-center
-                    lg:space-x-8
-                    md:w-2/3 md:mt-0 md:flex-row md:items-center
-                  "
-                >
-                  <a
-                    href="#_"
-                    class="
-                      inline-block
-                      w-full
-                      py-2
-                      mx-0
-                      ml-6
-                      font-medium
-                      text-left text-indigo-600
-                      md:ml-0 md:w-auto md:px-0 md:mx-2
-                      lg:mx-3
-                      md:text-center
-                    "
-                    >Home</a
-                  >
-                  <a
-                    href="#_"
-                    class="
-                      inline-block
-                      w-full
-                      py-2
-                      mx-0
-                      font-medium
-                      text-left text-gray-700
-                      md:w-auto md:px-0 md:mx-2
-                      hover:text-indigo-600
-                      lg:mx-3
-                      md:text-center
-                    "
-                    >Labs</a
-                  >
-                  <a
-                    href="#_"
-                    class="
-                      inline-block
-                      w-full
-                      py-2
-                      mx-0
-                      font-medium
-                      text-left text-gray-700
-                      md:w-auto md:px-0 md:mx-2
-                      hover:text-indigo-600
-                      lg:mx-3
-                      md:text-center
-                    "
-                    >People</a
-                  >
-                  <a
-                    href="#_"
-                    class="
-                      inline-block
-                      w-full
-                      py-2
-                      mx-0
-                      font-medium
-                      text-left text-gray-700
-                      md:w-auto md:px-0 md:mx-2
-                      hover:text-indigo-600
-                      lg:mx-3
-                      md:text-center
-                    "
-                    >Publications</a
-                  >
-                  <a
-                    href="#_"
-                    class="
-                      inline-block
-                      w-full
-                      py-2
-                      mx-0
-                      font-medium
-                      text-left text-gray-700
-                      md:w-auto md:px-0 md:mx-2
-                      hover:text-indigo-600
-                      lg:mx-3
-                      md:text-center
-                    "
-                    >Profile</a
-                  >
-                </div>
-              </div>
+              <a href="https://www.nsf.gov/" target="_blank">
+                <img
+                  src="images/nsf.png"
+                  alt="NSF"
+                  class="block object-contain h-10 md:h-16"
+                />
+              </a>
             </div>
             <div
-              @click="showMenu = !showMenu"
               class="
-                absolute
-                right-0
-                flex flex-col
-                items-center items-end
+                flex
+                items-center
                 justify-center
-                w-10
-                h-10
-                bg-white
-                rounded-full
-                cursor-pointer
-                md:hidden
-                hover:bg-gray-100
+                col-span-6
+                sm:col-span-4
+                md:col-span-3
+                xl:col-span-2
               "
             >
-              <svg
-                class="w-6 h-6 text-gray-700"
-                x-show="!showMenu"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                x-cloak=""
-              >
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-              <svg
-                class="w-6 h-6 text-gray-700"
-                x-show="showMenu"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                x-cloak=""
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
+              <a href="https://www.nsa.gov" target="_blank">
+                <img
+                  src="images/nsa.svg"
+                  alt="NSA"
+                  class="block object-contain h-10 md:h-16"
+                />
+              </a>
+            </div>
+            <div
+              class="
+                flex
+                items-center
+                justify-center
+                col-span-6
+                sm:col-span-4
+                md:col-span-3
+                xl:col-span-2
+              "
+            >
+              <a href="https://www.onr.navy.mil/" target="_blank">
+                <img
+                  src="images/ONR.png"
+                  alt="Onr"
+                  class="block object-contain h-10 md:h-16"
+                />
+              </a>
             </div>
           </div>
-        </nav>
-
-        <!-- Main Hero Content -->
-        <div
-          class="
-            container
-            max-w-lg
-            px-4
-            py-32
-            mx-auto
-            text-left
-            md:max-w-none md:text-center
-          "
-        >
-          <h1
-            class="
-              text-5xl
-              font-extrabold
-              leading-10
-              tracking-tight
-              text-left text-gray-900
-              md:text-center
-              sm:leading-none
-              md:text-6xl
-              lg:text-7xl
-            "
-          >
-            <span class="inline md:block"
-              >Autonomy, Warfare, and Engineering
-            </span>
-            <span
-              class="
-                relative
-                mt-2
-                text-transparent
-                bg-clip-text bg-gradient-to-br
-                from-indigo-600
-                to-indigo-500
-                md:inline-block
-              "
-              >(AWARE) Lab</span
-            >
-          </h1>
         </div>
-        <!-- End Main Hero Content -->
-      </div>
-    </section>
+      </section>
 
-    <!-- Section 2 -->
-    <section data-aos="zoom-in-down" class="px-2 py-32 bg-white md:px-0">
-      <div class="container items-center max-w-6xl px-8 mx-auto xl:px-5">
-        <div class="flex flex-wrap items-center sm:-mx-3">
-          <div class="w-full md:w-1/2 md:px-3">
-            <div
-              class="
-                w-full
-                pb-6
-                space-y-6
-                sm:max-w-md
-                lg:max-w-lg
-                md:space-y-4
-                lg:space-y-8
-                xl:space-y-9
-                sm:pr-5
-                lg:pr-0
-                md:pb-0
-              "
-            >
-              <h1
+      <section
+        id="labs"
+        class="w-full py-12 bg-white lg:py-24 from-purple-200 bg-gradient-to-r"
+      >
+        <div class="max-w-6xl px-12 mx-auto text-center">
+          <div class="space-y-12 md:text-center">
+            <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
+              <h2
                 class="
+                  relative
                   text-4xl
                   font-extrabold
                   tracking-tight
-                  text-gray-900
                   sm:text-5xl
-                  md:text-4xl
-                  lg:text-5xl
-                  xl:text-6xl
                 "
               >
-                <span class="block xl:inline">The mission of </span>
-                <span class="block text-indigo-600 xl:inline"
-                  >The AWARE lab</span
+                Labs
+              </h2>
+              <p class="text-xl text-gray-500">Our Research labs include:</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+              <div class="flex flex-col items-center justify-center p-10">
+                <div
+                  class="
+                    w-32
+                    h-32
+                    mb-6
+                    rounded-full
+                    text-white
+                    bg-indigo-600
+                    flex
+                    justify-center
+                    items-center
+                  "
                 >
-              </h1>
-              <p
-                class="
-                  mx-auto
-                  text-base text-gray-500
-                  sm:max-w-md
-                  lg:text-xl
-                  md:max-w-3xl
-                "
-              >
-                Is to support projects related to: Autonomous systems, Warfare
-                applications and Software Engineering.
-              </p>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2">
-            <div
-              data-aos="fade-up"
-              class="
-                w-full
-                h-auto
-                overflow-hidden
-                rounded-md
-                shadow-xl
-                sm:rounded-xl
-              "
-            >
-              <img
-                src="https://cdn.devdojo.com/images/november2020/hero-image.jpeg"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 3 -->
-    <section data-aos="zoom-in-right" class="bg-white pt-7 pb-14">
-      <div class="container px-8 mx-auto sm:px-12 lg:px-20">
-        <h1
-          class="
-            text-sm
-            font-bold
-            tracking-wide
-            text-center text-gray-800
-            uppercase
-            mb-7
-          "
-        >
-          Funding Companies
-        </h1>
-
-        <div class="flex justify-between">
-          <div
-            class="
-              flex
-              items-center
-              justify-center
-              col-span-6
-              sm:col-span-4
-              md:col-span-3
-              xl:col-span-2
-            "
-          >
-            <a href="https://www.wpafb.af.mil/afrl/" target="_blank">
-              <img
-                src="images/afrl.png"
-                alt="Air Force Research Lab"
-                class="block object-contain h-10 md:h-16"
-              />
-            </a>
-          </div>
-          <div
-            class="
-              flex
-              items-center
-              justify-center
-              col-span-6
-              sm:col-span-4
-              md:col-span-3
-              xl:col-span-2
-            "
-          >
-            <a href="https://www.nsf.gov/" target="_blank">
-              <img
-                src="images/nsf.png"
-                alt="NSF"
-                class="block object-contain h-10 md:h-16"
-              />
-            </a>
-          </div>
-          <div
-            class="
-              flex
-              items-center
-              justify-center
-              col-span-6
-              sm:col-span-4
-              md:col-span-3
-              xl:col-span-2
-            "
-          >
-            <a href="https://www.nsa.gov" target="_blank">
-              <img
-                src="images/nsa.svg"
-                alt="NSA"
-                class="block object-contain h-10 md:h-16"
-              />
-            </a>
-          </div>
-          <div
-            class="
-              flex
-              items-center
-              justify-center
-              col-span-6
-              sm:col-span-4
-              md:col-span-3
-              xl:col-span-2
-            "
-          >
-            <a href="https://www.onr.navy.mil/" target="_blank">
-              <img
-                src="images/ONR.png"
-                alt="Onr"
-                class="block object-contain h-10 md:h-16"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 5 -->
-    <section
-      class="w-full py-12 bg-white lg:py-24 from-purple-200 bg-gradient-to-r"
-    >
-      <div class="max-w-6xl px-12 mx-auto text-center">
-        <div class="space-y-12 md:text-center">
-          <div class="max-w-3xl mb-20 space-y-5 sm:mx-auto sm:space-y-4">
-            <h2
-              class="
-                relative
-                text-4xl
-                font-extrabold
-                tracking-tight
-                sm:text-5xl
-              "
-            >
-              Labs
-            </h2>
-            <p class="text-xl text-gray-500">Our Research labs include:</p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="w-full border border-gray-200 rounded-lg shadow-sm">
-            <div class="flex flex-col items-center justify-center p-10">
-              <div
-                class="
-                  w-32
-                  h-32
-                  mb-6
-                  rounded-full
-                  text-white
-                  bg-indigo-600
-                  flex
-                  justify-center
-                  items-center
-                "
-              >
-                Lab 1
+                  Lab 1
+                </div>
+                <h2 class="text-lg font-medium">Lab 1</h2>
+                <p class="font-medium text-blue-500">Lab 1 is about Lab 1</p>
+                <p class="text-gray-400">Lab 1</p>
               </div>
-              <h2 class="text-lg font-medium">Lab 1</h2>
-              <p class="font-medium text-blue-500">Lab 1 is about Lab 1</p>
-              <p class="text-gray-400">Lab 1</p>
-            </div>
 
-            <!-- Lab links incase of v2 -->
-            <!-- <div class="flex border-t border-gray-200 divide-x divide-gray-200">
+              <!-- Lab links incase of v2 -->
+              <!-- <div class="flex border-t border-gray-200 divide-x divide-gray-200">
               <a
                 href="#_"
                 class="
@@ -574,77 +581,77 @@
                 </svg>
               </a>
             </div> -->
-          </div>
+            </div>
 
-          <div class="w-full border border-gray-200 rounded-lg shadow-sm">
-            <div class="flex flex-col items-center justify-center p-10">
-              <div
-                class="
-                  w-32
-                  h-32
-                  mb-6
-                  rounded-full
-                  text-white
-                  bg-indigo-600
-                  flex
-                  justify-center
-                  items-center
-                "
-              >
-                Lab 2
+            <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+              <div class="flex flex-col items-center justify-center p-10">
+                <div
+                  class="
+                    w-32
+                    h-32
+                    mb-6
+                    rounded-full
+                    text-white
+                    bg-indigo-600
+                    flex
+                    justify-center
+                    items-center
+                  "
+                >
+                  Lab 2
+                </div>
+                <h2 class="text-lg font-medium">Lab 2</h2>
+                <p class="font-medium text-blue-500">Lab 2 is about Lab 2</p>
+                <p class="text-gray-400">Lab 2</p>
               </div>
-              <h2 class="text-lg font-medium">Lab 2</h2>
-              <p class="font-medium text-blue-500">Lab 2 is about Lab 2</p>
-              <p class="text-gray-400">Lab 2</p>
             </div>
-          </div>
-          <div class="w-full border border-gray-200 rounded-lg shadow-sm">
-            <div class="flex flex-col items-center justify-center p-10">
-              <div
-                class="
-                  w-32
-                  h-32
-                  mb-6
-                  rounded-full
-                  text-white
-                  bg-indigo-600
-                  flex
-                  justify-center
-                  items-center
-                "
-              >
-                Lab 3
-              </div>
+            <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+              <div class="flex flex-col items-center justify-center p-10">
+                <div
+                  class="
+                    w-32
+                    h-32
+                    mb-6
+                    rounded-full
+                    text-white
+                    bg-indigo-600
+                    flex
+                    justify-center
+                    items-center
+                  "
+                >
+                  Lab 3
+                </div>
 
-              <h2 class="text-lg font-medium">Lab 3</h2>
-              <p class="font-medium text-blue-500">Lab 3 is about Lab 3</p>
-              <p class="text-gray-400">Lab 3</p>
-            </div>
-          </div>
-          <div class="w-full border border-gray-200 rounded-lg shadow-sm">
-            <div class="flex flex-col items-center justify-center p-10">
-              <div
-                class="
-                  w-32
-                  h-32
-                  mb-6
-                  rounded-full
-                  text-white
-                  bg-indigo-600
-                  flex
-                  justify-center
-                  items-center
-                "
-              >
-                Lab 4
+                <h2 class="text-lg font-medium">Lab 3</h2>
+                <p class="font-medium text-blue-500">Lab 3 is about Lab 3</p>
+                <p class="text-gray-400">Lab 3</p>
               </div>
-              <h2 class="text-lg font-medium">Lab 4</h2>
-              <p class="font-medium text-blue-500">Lab 4 is about Lab 4</p>
-              <p class="text-gray-400">Lab 4</p>
+            </div>
+            <div class="w-full border border-gray-200 rounded-lg shadow-sm">
+              <div class="flex flex-col items-center justify-center p-10">
+                <div
+                  class="
+                    w-32
+                    h-32
+                    mb-6
+                    rounded-full
+                    text-white
+                    bg-indigo-600
+                    flex
+                    justify-center
+                    items-center
+                  "
+                >
+                  Lab 4
+                </div>
+                <h2 class="text-lg font-medium">Lab 4</h2>
+                <p class="font-medium text-blue-500">Lab 4 is about Lab 4</p>
+                <p class="text-gray-400">Lab 4</p>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- <button>
+          <!-- <button>
           <a
             href="#_"
             class="
@@ -673,12 +680,12 @@
             >View All Labs
           </a>
         </button> -->
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <!-- Section 6 // View all labs card and div-->
+      <!-- Section 6 // View all labs card and div-->
 
-    <!-- <section
+      <!-- <section
       class="flex items-center justify-center py-16 bg-gray-100 min-w-screen"
     >
       <div class="max-w-6xl px-12 mx-auto bg-gray-100 md:px-16 xl:px-10">
@@ -804,374 +811,386 @@
         </div>
       </div>
     </section> -->
-    <!-- Careers -->
-    <section class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
-      <section class="py-10 bg-white">
-        <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
-          <h2
-            class="
-              text-3xl
-              font-extrabold
-              tracking-tight
-              text-gray-900
-              sm:text-4xl
-              md:text-5xl
-              xl:text-6xl
-            "
+      <!-- Careers -->
+      <section class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
+        <section class="py-10 bg-white">
+          <div
+            data-aos="zoom-in-up"
+            class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8"
           >
-            <span> Recruiting Students and PostDocs</span>
-          </h2>
-          <p
-            class="
-              max-w-md
-              mx-auto
-              mt-3
-              text-base text-gray-500
-              sm:text-lg
-              md:mt-5 md:text-xl md:max-w-3xl
-            "
-          >
-            We are recruiting students (undergraduate and graduate), PhD
-            students and PostDocs for several positions in the areas of:
-            Decision-support processes
-          </p>
-          <p
-            class="
-              max-w-md
-              mx-auto
-              mt-3
-              p-4
-              text-base text-gray-500
-              sm:text-lg
-              md:mt-5 md:text-xl md:max-w-3xl
-            "
-          >
-            No experience in these areas is necessary for undergraduate/MS
-            students. Stipends and complete tuition are provided for PhD
-            students. You may contact the lab at: aware at mail.rit.edu
-          </p>
-        </div>
-      </section>
-
-      <div
-        class="
-          box-border
-          flex flex-col
-          items-center
-          content-center
-          px-8
-          mx-auto
-          leading-6
-          text-black
-          border-0 border-gray-300 border-solid
-          md:flex-row
-          max-w-7xl
-          lg:px-16
-        "
-      >
-        <!-- Image -->
+            <h2
+              class="
+                text-3xl
+                font-extrabold
+                tracking-tight
+                text-gray-900
+                sm:text-4xl
+                md:text-5xl
+                xl:text-6xl
+              "
+            >
+              <span> Recruiting Students and PostDocs</span>
+            </h2>
+            <p
+              class="
+                max-w-md
+                mx-auto
+                mt-3
+                text-base text-gray-500
+                sm:text-lg
+                md:mt-5 md:text-xl md:max-w-3xl
+              "
+            >
+              We are recruiting students (undergraduate and graduate), PhD
+              students and PostDocs for several positions in the areas of:
+              Decision-support processes
+            </p>
+            <p
+              class="
+                max-w-md
+                mx-auto
+                mt-3
+                p-4
+                text-base text-gray-500
+                sm:text-lg
+                md:mt-5 md:text-xl md:max-w-3xl
+              "
+            >
+              No experience in these areas is necessary for undergraduate/MS
+              students. Stipends and complete tuition are provided for PhD
+              students. You may contact the lab at: aware at mail.rit.edu
+            </p>
+          </div>
+        </section>
 
         <div
           class="
             box-border
-            relative
-            w-full
-            max-w-md
-            px-4
-            mt-5
-            mb-4
-            -ml-5
-            text-center
-            bg-no-repeat bg-contain
-            border-solid
-            md:ml-0 md:mt-0 md:max-w-none
-            lg:mb-0
-            md:w-1/2
-            xl:pl-10
-          "
-        >
-          <img
-            src="https://cdn.devdojo.com/images/november2020/hero-image.jpeg"
-            class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20"
-            alt=""
-          />
-        </div>
-
-        <!-- Content -->
-
-        <div
-          class="
-            box-border
-            order-first
-            w-full
+            flex flex-col
+            items-center
+            content-center
+            px-8
+            mx-auto
+            leading-6
             text-black
-            border-solid
-            md:w-1/2 md:pl-10 md:order-none
+            border-0 border-gray-300 border-solid
+            md:flex-row
+            max-w-7xl
+            lg:px-16
           "
         >
-          <h2
-            class="
-              m-0
-              text-xl
-              font-semibold
-              leading-tight
-              border-0 border-gray-300
-              lg:text-3xl
-              md:text-2xl
-            "
-          >
-            <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
-              <li
-                class="
-                  box-border
-                  relative
-                  py-1
-                  pl-0
-                  text-left text-black
-                  border-solid
-                "
-              >
-                <span
-                  class="
-                    inline-flex
-                    items-center
-                    justify-center
-                    w-6
-                    h-6
-                    mr-2
-                    text-white
-                    bg-indigo-300
-                    rounded-full
-                  "
-                >
-                  <span class="text-sm font-bold">✓</span>
-                </span>
-                Self-Adaptive Systems
-              </li>
-              <li
-                class="
-                  box-border
-                  relative
-                  py-1
-                  pl-0
-                  text-left text-black
-                  border-solid
-                "
-              >
-                <span
-                  class="
-                    inline-flex
-                    items-center
-                    justify-center
-                    w-6
-                    h-6
-                    mr-2
-                    text-white
-                    bg-indigo-300
-                    rounded-full
-                  "
-                >
-                  <span class="text-sm font-bold">✓</span>
-                </span>
-                Artificial Intelligence
-              </li>
-              <li
-                class="
-                  box-border
-                  relative
-                  py-1
-                  pl-0
-                  text-left text-black
-                  border-solid
-                "
-              >
-                <span
-                  class="
-                    inline-flex
-                    items-center
-                    justify-center
-                    w-6
-                    h-6
-                    mr-2
-                    text-white
-                    bg-indigo-300
-                    rounded-full
-                  "
-                >
-                  <span class="text-sm font-bold">✓</span>
-                </span>
-                Decision-support processes
-              </li>
-            </ul>
-          </h2>
-        </div>
+          <!-- Image -->
 
-        <!-- End  Content -->
-      </div>
-      <p
-        class="
-          max-w-md
-          mx-auto
-          mt-3
-          p-3
-          text-base text-gray-500
-          sm:text-lg
-          md:mt-5 md:text-xl md:max-w-3xl md:p-0
-        "
-      >
-        No experience in these areas is necessary for undergraduate/MS students.
-        Stipends and complete tuition are provided for PhD students. You may
-        contact the lab at: aware at mail.rit.edu
-      </p>
-    </section>
-    <!-- Current Students -->
-    <section
-      data-aos="zoom-in-up"
-      class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24"
-    >
-      <section class="bg-white">
-        <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
-          <h2
+          <div
+            data-aos="fade-left"
             class="
-              text-3xl
-              font-extrabold
-              tracking-tight
-              text-gray-900
-              py-4
-              sm:text-4xl
-              md:text-5xl
-              xl:text-6xl
+              box-border
+              relative
+              w-full
+              max-w-md
+              px-4
+              mt-5
+              mb-4
+              -ml-5
+              text-center
+              bg-no-repeat bg-contain
+              border-solid
+              md:ml-0 md:mt-0 md:max-w-none
+              lg:mb-0
+              md:w-1/2
+              xl:pl-10
             "
           >
-            <span> Current Students</span>
-          </h2>
-          <ul
-            id="currentStudents"
+            <img
+              src="https://cdn.devdojo.com/images/november2020/hero-image.jpeg"
+              class="p-2 pl-6 pr-5 xl:pl-16 xl:pr-20"
+              alt=""
+            />
+          </div>
+
+          <!-- Content -->
+
+          <div
             class="
-              md:p-0
-              m-0
-              leading-6
-              border-0 border-gray-300
-              flex
-              justify-between
-              flex-wrap
-              gap-12
-              sm:p-4
+              box-border
+              order-first
+              w-full
+              text-black
+              border-solid
+              md:w-1/2 md:pl-10 md:order-none
             "
-          ></ul>
+          >
+            <h2
+              class="
+                m-0
+                text-xl
+                font-semibold
+                leading-tight
+                border-0 border-gray-300
+                lg:text-3xl
+                md:text-2xl
+              "
+            >
+              <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
+                <li
+                  class="
+                    box-border
+                    relative
+                    py-1
+                    pl-0
+                    text-left text-black
+                    border-solid
+                  "
+                >
+                  <span
+                    class="
+                      inline-flex
+                      items-center
+                      justify-center
+                      w-6
+                      h-6
+                      mr-2
+                      text-white
+                      bg-indigo-300
+                      rounded-full
+                    "
+                  >
+                    <span class="text-sm font-bold">✓</span>
+                  </span>
+                  Self-Adaptive Systems
+                </li>
+                <li
+                  class="
+                    box-border
+                    relative
+                    py-1
+                    pl-0
+                    text-left text-black
+                    border-solid
+                  "
+                >
+                  <span
+                    class="
+                      inline-flex
+                      items-center
+                      justify-center
+                      w-6
+                      h-6
+                      mr-2
+                      text-white
+                      bg-indigo-300
+                      rounded-full
+                    "
+                  >
+                    <span class="text-sm font-bold">✓</span>
+                  </span>
+                  Artificial Intelligence
+                </li>
+                <li
+                  class="
+                    box-border
+                    relative
+                    py-1
+                    pl-0
+                    text-left text-black
+                    border-solid
+                  "
+                >
+                  <span
+                    class="
+                      inline-flex
+                      items-center
+                      justify-center
+                      w-6
+                      h-6
+                      mr-2
+                      text-white
+                      bg-indigo-300
+                      rounded-full
+                    "
+                  >
+                    <span class="text-sm font-bold">✓</span>
+                  </span>
+                  Decision-support processes
+                </li>
+              </ul>
+            </h2>
+          </div>
+
+          <!-- End  Content -->
         </div>
-      </section>
-    </section>
-    <!-- Former Students -->
-    <section
-      data-aos="zoom-out"
-      class="
-        w-full
-        pt-7
-        pb-7
-        md:pt-20 md:pb-24
-        from-purple-200
-        bg-gradient-to-r
-      "
-    >
-      <section class="">
-        <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
-          <h2
-            class="
-              text-3xl
-              font-extrabold
-              tracking-tight
-              text-gray-900
-              py-4
-              sm:text-4xl
-              md:text-5xl
-              xl:text-6xl
-            "
-          >
-            <span> Former Students</span>
-          </h2>
-          <h2
-            class="
-              text-lg
-              font-extrabold
-              tracking-tight
-              text-gray-900
-              py-4
-              sm:text-lg
-              md:text-2xl
-              xl:text-2xl
-            "
-          >
-            <span> Graduate</span>
-          </h2>
-          <ul
-            data-aos="zoom-in-out"
-            id="formerGraduate"
-            class="
-              md:p-0
-              m-0
-              leading-6
-              border-0 border-gray-300
-              flex
-              justify-between
-              flex-wrap
-              gap-12
-              sm:p-4
-            "
-          ></ul>
-          <h2
-            class="
-              text-lg
-              font-extrabold
-              tracking-tight
-              text-gray-900
-              py-4
-              sm:text-lg
-              md:text-2xl
-              xl:text-2xl
-            "
-          >
-            <span> Undergraduate</span>
-          </h2>
-          <ul
-            data-aos="zoom-out"
-            id="formerUndergraduate"
-            class="
-              md:p-0
-              m-0
-              leading-6
-              border-0 border-gray-300
-              flex
-              justify-between
-              flex-wrap
-              gap-12
-              sm:p-4
-            "
-          ></ul>
-        </div>
-      </section>
-    </section>
-    <!-- Footer -->
-    <section class="text-gray-700 bg-white body-font">
-      <div
-        class="
-          container
-          flex flex-col
-          items-center
-          px-8
-          py-8
-          mx-auto
-          max-w-7xl
-          sm:flex-row
-        "
-      >
-        <a
-          href="#_"
-          class="text-xl font-black leading-none text-gray-900 select-none logo"
-          >Daniel E. Krutz<span class="text-indigo-600">.</span></a
+        <p
+          class="
+            max-w-md
+            mx-auto
+            mt-3
+            p-3
+            text-base text-gray-500
+            sm:text-lg
+            md:mt-5 md:text-xl md:max-w-3xl md:p-0
+          "
         >
+          No experience in these areas is necessary for undergraduate/MS
+          students. Stipends and complete tuition are provided for PhD students.
+          You may contact the lab at: aware at mail.rit.edu
+        </p>
+      </section>
+      <!-- Current Students -->
+      <section
+        id="people"
+        data-aos="zoom-in-up"
+        class="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24"
+      >
+        <section class="bg-white">
+          <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
+            <h2
+              class="
+                text-3xl
+                font-extrabold
+                tracking-tight
+                text-gray-900
+                py-4
+                sm:text-4xl
+                md:text-5xl
+                xl:text-6xl
+              "
+            >
+              <span> Current Students</span>
+            </h2>
+            <ul
+              id="currentStudents"
+              class="
+                md:p-0
+                m-0
+                leading-6
+                border-0 border-gray-300
+                flex
+                justify-between
+                flex-wrap
+                gap-12
+                sm:p-4
+              "
+            ></ul>
+          </div>
+        </section>
+      </section>
+      <!-- Former Students -->
+      <section
+        data-aos="zoom-out"
+        class="
+          w-full
+          pt-7
+          pb-7
+          md:pt-20 md:pb-24
+          from-purple-200
+          bg-gradient-to-r
+        "
+      >
+        <section class="">
+          <div class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8">
+            <h2
+              class="
+                text-3xl
+                font-extrabold
+                tracking-tight
+                text-gray-900
+                py-4
+                sm:text-4xl
+                md:text-5xl
+                xl:text-6xl
+              "
+            >
+              <span> Former Students</span>
+            </h2>
+            <h2
+              class="
+                text-lg
+                font-extrabold
+                tracking-tight
+                text-gray-900
+                py-4
+                sm:text-lg
+                md:text-2xl
+                xl:text-2xl
+              "
+            >
+              <span> Graduate</span>
+            </h2>
+            <ul
+              data-aos="zoom-in-out"
+              id="formerGraduate"
+              class="
+                md:p-0
+                m-0
+                leading-6
+                border-0 border-gray-300
+                flex
+                justify-between
+                flex-wrap
+                gap-12
+                sm:p-4
+              "
+            ></ul>
+            <h2
+              class="
+                text-lg
+                font-extrabold
+                tracking-tight
+                text-gray-900
+                py-4
+                sm:text-lg
+                md:text-2xl
+                xl:text-2xl
+              "
+            >
+              <span> Undergraduate</span>
+            </h2>
+            <ul
+              data-aos="zoom-out"
+              id="formerUndergraduate"
+              class="
+                md:p-0
+                m-0
+                leading-6
+                border-0 border-gray-300
+                flex
+                justify-between
+                flex-wrap
+                gap-12
+                sm:p-4
+              "
+            ></ul>
+          </div>
+        </section>
+      </section>
+      <!-- Footer -->
+      <section class="text-gray-700 bg-white body-font">
+        <div
+          class="
+            container
+            flex flex-col
+            items-center
+            px-8
+            py-8
+            mx-auto
+            max-w-7xl
+            sm:flex-row
+          "
+        >
+          <a
+            href="#_"
+            class="
+              text-xl
+              font-black
+              leading-none
+              text-gray-900
+              select-none
+              logo
+            "
+            >Daniel E. Krutz<span class="text-indigo-600">.</span></a
+          >
 
-        <!-- <span
+          <!-- <span
           class="
             inline-flex
             justify-center
@@ -1258,8 +1277,10 @@
             </svg>
           </a>
         </span> -->
-      </div>
-    </section>
+        </div>
+      </section>
+    </div>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
