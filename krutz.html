@@ -17,6 +17,19 @@
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         justify-content: center;
       }
+
+      .all-text {
+    position: absolute;
+    left: 10%;
+    margin-top: -2rem;
+     color: rgb(36, 36, 36);
+      }
+      .all-text-bottom {
+    position: absolute;
+    left: 13%;
+    margin-top: -2rem;
+     color: rgb(36, 36, 36);
+      }
     </style>
   </head>
 
@@ -30,7 +43,7 @@
           bg-gradient-to-t
           w-full
           z-50
-          h-24
+          h-28
           select-none
         "
         x-data="{ showMenu: false }"
@@ -52,8 +65,10 @@
           "
         >
           <div class="flex items-center justify-start w-1/4 h-full pr-4">
-              <span class="p-1 text-xl font-black leading-none  md:text-white text-gray-900">
-                <img src="/images/aware-lab-logo -resized.png" alt="aware-logo">
+              <span class="">
+                <img class="relative" src="/images/aware-lab-logo -resized.png" alt="aware-logo">
+      <p class="all-text">all.rit.edu</p>
+
                 </img>
               </span>
           </div>
@@ -378,17 +393,17 @@
             mt-10
             mb-10
        text-center
-                text-3xl
-                font-extrabold
+                text-2xl
+                font-bold
                 tracking-tight
                 text-gray-900
-                sm:text-4xl
-                md:text-5xl
-                xl:text-6xl
+                sm:text-2xl
+                md:text-3xl
+                xl:text-4xl
               
             "
           >
-            Funding Agencies
+          Some of the funding agencies supporting research conducted in the lab include:
           </h1>
 
           <div class="flex justify-between">
@@ -1165,21 +1180,11 @@
       </section>
       <!-- Footer -->
 
-        <sectionclass="bg-white pt-7 pb-14 aos-init aos-animate">
-          <div class="
-              flex
-              items-left
-              justify-left
-              col-span-6
-              sm:col-span-4
-              md:col-span-3
-              xl:col-span-2
-            ">
-            <a href="#lab" target="_blank">
-              <img src="/images/aware-lab-logo -resized.png" alt="aware-logo">
+        <section class="bg-white pt-7">
+          <div class="">
 
-              <!-- <img src="images/Aware-lab-logo.png" alt="aware-logo Lab" class="block object-contain h-24 md:h-24 lg:32"> -->
-            </a>
+              <img class="relative" src="/images/aware-lab-logo -resized.png" alt="aware-logo"></href>
+      <p class="all-text-bottom">all.rit.edu</p>
           </div>
           
       </section>
