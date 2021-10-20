@@ -21,14 +21,18 @@
       .all-text {
     position: absolute;
     left: 5%;
-    margin-top: -2rem;
+bottom: 0;
      color: rgb(36, 36, 36);
       }
       .all-text-bottom {
     position: absolute;
     left: 5%;
-    margin-top: -2rem;
+/* bottom: 0; */
      color: rgb(36, 36, 36);
+      }
+      .link-text{
+        font-style: italic;
+        color: rgb(185, 129, 237);
       }
     </style>
   </head>
@@ -64,12 +68,11 @@
             md:px-2
           "
         >
-          <div class="flex items-center justify-start w-1/4 h-full pr-4">
-              <span class="">
-                <img class="relative" src="/images/aware-lab-logo -resized.png" alt="aware-logo">
-      <p class="all-text">aware.rit.edu</p>
-
-                </img>
+          <div class="flex items-center justify-start  md:w-1/4 h-full pr-4 relative">
+              <span >
+                <img src="/images/aware-lab-logo -resized.png" alt="aware-logo">      
+              </img>
+              <p class="absolute left-24 sm:left-16 lg:left-20 xl:left-24 xl:-bottom-2 bottom-0 text-black">aware.rit.edu</p>
               </span>
           </div>
           <div
@@ -1063,6 +1066,161 @@
           You may contact the lab at: aware at mail.rit.edu
         </p>
       </section>
+
+      <!-- Lab Director -->
+      <section class="w-full bg-white pb-7 ">
+        <section class="py-10 bg-white">
+          <div
+            data-aos="zoom-in-up"
+            class="px-4 mx-auto text-center max-w-7xl sm:px-6 lg:px-8"
+          >
+            <h2
+              class="
+                text-3xl
+                font-extrabold
+                tracking-tight
+                text-gray-900
+                sm:text-4xl
+                md:text-5xl
+                xl:text-6xl
+              "
+            >
+              <span> Lab Director</span>
+            </h2>
+            
+   
+          </div>
+        </section>
+
+        <div
+          class="
+            box-border
+            flex flex-col
+            items-center
+            content-center
+            px-8
+            mx-auto
+            leading-6
+            text-black
+            border-0 border-gray-300 border-solid
+            md:flex-row
+            max-w-7xl
+            lg:px-16
+          "
+        >
+          <!-- Image -->
+
+          <div
+            data-aos="fade-left"
+            class="
+              box-border
+              relative
+              w-full
+              max-w-md
+              px-4
+              mt-5
+              mb-4
+              -ml-5
+              text-center
+              bg-no-repeat bg-contain
+              border-solid
+              md:ml-0 md:mt-0 md:max-w-none
+              lg:mb-0
+              md:w-1/2
+              xl:pl-10
+            "
+          >
+            <img
+              src="images/krutz_sm_2.png"
+              class="p-2 pl-6 pr-5 md:w-80"
+              alt=""
+            />
+          </div>
+
+          <!-- Content -->
+
+          <div
+            class="
+              box-border
+              order-first
+              w-full
+              text-black
+              border-solid
+              md:w-1/2 md:pl-10 md:order-none
+            "
+          >
+            <p
+              class="
+                m-0
+                text-lg
+                leading-tight
+                border-0 border-gray-300
+                lg:text-xl
+                md:text-xl
+              "
+            >
+            I am an Assistant Professor at <a href="https://rit.edu" class="link-text" target="_blank"> Rochester Institute of Technology</a>, <a href="https://se.rit.edu" target="_blank" class="link-text"> Department of Software Engineering</a> and <a href="https://www.rit.edu/cybersecurity/" class="link-text"  target="_blank">Center for Cybersecurity</a>. I am the Director of the <a href="index.html?page=aware-lab" class="link-text">Autonomy, WARfare, and Engineering (AWARE) Lab</a>, which supports several externally funded projects for the NSF, NSA and the DOD. My research interests include Self Adaptive Systems, Decision Support Systems and Computing Education. Some of the courses I have taught include: Engineering of Secure Software, Web Engineering, Foundations of Software Engineering (Graduate), Research Methods (Graduate), and Capstone/Thesis projects (Graduate). In 2018 I received a research faculty fellowship at the <a href="http://www.wpafb.af.mil/afrl/" class="link-text" target="_blank">US Air Force Research Laboratory (AFRL)</a>. <!--Before joining RIT, I worked in industry as a software engineer for several companies.-->	
+            </p>
+          </div>
+          <!-- End  Content -->
+        </div>
+        <div
+          class="
+            
+          box-border
+          flex flex-col
+          items-center
+          content-center
+          px-8
+          mx-auto
+          leading-6
+          text-black
+          border-0 border-gray-300 border-solid
+
+          max-w-7xl
+          lg:px-16
+        
+          "
+        >
+        <h4 class="
+        text-lg
+        font-extrabold
+        tracking-tight
+        text-gray-900
+        py-8
+        sm:text-lg
+        md:text-2xl
+        xl:text-2xl
+      ">
+
+          Contact Information
+        </h4>
+       <p>
+
+       <p>Daniel E. Krutz, PhD</p> 
+       <p>
+         dxkvse AT rit.edu
+
+       </p> 
+       <p>
+
+         GCI-3767
+       </p>
+       <p>
+         Department of Software Engineering
+         
+        </p>
+        <p>
+
+          Rochester Institute of Technology
+        </p>
+      
+      </p>
+
+      </div>
+
+   
+      </section>
       <!-- Current Students -->
       <section
         id="people"
@@ -1180,12 +1338,13 @@
       </section>
       <!-- Footer -->
 
-        <section class="bg-white pt-7">
-          <div class="">
+        <section class="bg-white pt-7 relative">
+          <div class="flex justify-start sm:w-1/3 md:w-1/4 ">
 
-              <img class="relative" src="/images/aware-lab-logo -resized.png" alt="aware-logo"></href>
-      <p class="all-text-bottom">aware.rit.edu</p>
-          </div>
+              <img  src="/images/aware-lab-logo -resized.png" alt="aware-logo"></href>
+            </div>
+            <p class="absolute left-24 sm:left-16 lg:left-20 xl:left-24 xl:-bottom-1 bottom-0 text-black">aware.rit.edu</p>
+
           
       </section>
     </div>
